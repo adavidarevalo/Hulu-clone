@@ -1,6 +1,6 @@
 export interface IData {
     adult: boolean;
-    backdrop_path: string;
+    backdrop_path?: string;
     genre_ids: number[];
     id: number;
     original_language: string;
@@ -9,8 +9,9 @@ export interface IData {
     popularity: number;
     poster_path: string;
     release_date: string;
-    title: string;
+    title?: string;
     video: boolean;
     vote_average: number;
     vote_count: number;
+    original_name?: string;
 }
